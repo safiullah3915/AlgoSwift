@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.footer-section{
+    width: 100%;
+    background: linear-gradient(180deg, #F3FFFF 0%, #FDE1FF 100%);
+/* height: 1000px; */
+margin-top: 2.8rem;
+box-sizing: border-box;
+padding: none;
+position: relative;
+z-index: 100;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.footer-details-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+gap: 1rem 1rem;
+justify-items: center;
+margin-top: 1.5rem;
+
+
+}
+.footer-details-single-col{
+    padding:0.7rem 1.5rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.cta-btn-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+.footer-contact-us-head{
+    font-size: 1.5rem;
+    color: rgba(116, 116, 116, 1);
+    font-weight: 630;
+
+}
+.footer-sitemap-list{
+list-style-type: none;
+li{
+    margin-bottom: 0.5rem;
+    a{
+        text-decoration: none;
+        font-size: 1rem;
+        color:rgba(169, 169, 169, 1);
+
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+}
+
+.footer-contact-us-sub-head{
+    color: rgba(116, 116, 116, 1);
+    ;
+}
+.footer-sub-details{
+    color:rgba(169, 169, 169, 1);
+ font-size: 1rem;
+ font-family: "Inter";
+
+}
+.call-to-action-head{
+    color: rgba(70, 70, 70, 1);
+    font-size: 1.6rem;
+    font-family: "Inter";
+
+
+}
+.cta-btn-container{
+    display: flex;
+    flex-direction: column;gap: 1.7rem;
+}
+.contact-us-btn{
+    background: none;
+    border: none;
+    a{
+        background-color: rgba(0, 27, 96, 1);
+        text-decoration: none;
+        font-family: "Inter";
+        font-size: 1.2rem;
+        color: white;
+        font-weight:600;
+        border-radius: 20px;
+        padding: 0.5rem 1.1rem;
+     
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+.footer-details-container{
+
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+*>{
+    padding:1rem 2rem ;
+}
+
+
+}
+.cta-btn-container{
+text-align: center;
+}
+.call-to-action-head {
+
+    font-size: 1.35rem;
+
+}
+}
+@media screen and (max-width:450px) {
+    
+    .footer-details-container{
+    
+        grid-template-columns: repeat(1, 1fr);
+justify-items: start;
+    
+    
+    }
+    }
+    .site-footer {
+        position: relative;
+        z-index: 20; 
+    }
+    

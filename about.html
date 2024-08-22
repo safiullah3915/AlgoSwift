@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "OSnB-cL1VT7HQHLyS",
+      });
+   })();
+</script>
+<!-- footer styles -->
+ <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <div class="home-page-container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="/index.html"><img class="logo-img" src="./assets/svgs/nav-logo.svg" alt="Logo" /></a>
+            </div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="./index.html#services" class="bookmark-url">Services</a>
+                <a href="./index.html#techs" class="bookmark-url">Technology</a>
+                <a href="services.html">Projects</a>
+                <!-- <a href="about.html" style="border-bottom: 6px solid rgba(0, 0, 54, 1);">Contact Us</a> -->
+            </nav>
+            <div class="cta">
+                <a href="about.html" style="text-decoration: none; color: black;">
+                    <button class="lets-talk">
+                        <i class="fa-solid fa-comments" style="color: #39f381;margin-right: 3px;"></i>
+                        Let's Talk</button>
+                </a>
+          
+                <div class="menu-icon">
+          
+                    <i class="fa-barss">
+                     <div class="three-dots-cont ">
+                       <img src="./assets/svgs/nav-three-dots.svg" alt="Theme Toggle" />
+                     </div>
+                    </i>
+                     <i class="fa-solid fa-xmark"></i>
+                   </div>
+            </div>
+        </header>
+    </div>
+<section class="contact-us-section">
+<div class="first-section">
+    <div>
+        <h3 class="contact-us-section-head">Get <span>real estimates</span> and ideal solutions for your project</h3>
+    <ul class="contact-us-section-list">
+        <li><img src="./assets/images/about/bullet.png" alt=""> <p>Receive accurate estimates with no hidden costs, ensuring you know exactly what to expect.</p></li>
+        <li><img src="./assets/images/about/bullet.png" alt=""> <p>Get customized strategies designed to meet your specific project needs and goals.</p></li>
+        <li><img src="./assets/images/about/bullet.png" alt=""> <p>Work with experienced professionals who provide insights and guidance at every step.</p></li>
+    </ul>
+    </div>
+ 
+</div>
+<div class="contact-us-form-container second-section">
+    <form class="contact-us-form" id="contact-form">
+        <button disabled class="contact-us-form-btns">Tell us about your company</button><br>
+        <span class="submission-label">email sending... </span>
+        <input class="input-text" type="text" name="fullName" id="fullName" placeholder="Full Name"><br>
+        <input class="input-text" type="email" name="email" id="email" placeholder="Email address"><br>
+        <input class="input-text" type="tel" name="contact" id="contact" placeholder="Contact"><br>
+        <button disabled class="contact-us-form-btns">Tell us about project</button><br>
+        <textarea name="projectDescription" id="projectDescription" placeholder="Project description" class="input-textarea" rows="5"></textarea><br>
+        <input type="number" name="budget" id="budget" placeholder="Estimated budget (in $dollars)" class="number-input input-text"><br>
+        <div style="text-align: end;">
+            <button type="submit" class="submit-btn">
+                <i class="fa-solid fa-arrow-right" style="color: #24ff48;"></i>
+                Submit
+            </button>
+        </div>
+    </form>
+    
+</div>
+</section>
+<!---------------------- footer section  -------------->
+<footer class="footer-section">
+    <section class="footer-container">
+        <!-- cta-contact us btn -->
+<div class="cta-btn-container">
+    <h3 class="call-to-action-head">Ready to Build Software That Matter?</h3>
+    <button class="contact-us-btn"><a href="/about.html">Contact Us</a> </button>
+</div>
+<!-- div footer details -->
+ <div class="footer-details-container">
+    <div class="footer-details-single-col">
+<h3 class="footer-contact-us-head">Contact Us</h3>
+<h4 class="footer-contact-us-sub-head"> 
+    Address
+</h4>
+<p class="footer-sub-details">Address of office will come 
+    here with street</p>
+    <h4 class="footer-contact-us-sub-head"> 
+        Phone
+    </h4>
+    <p  class="footer-sub-details">Address of office </p>
+    </div>
+    <div class="footer-details-single-col">
+        <h3 class="footer-contact-us-head">
+            Sitemaps
+        </h3>
+        <ul class="footer-sitemap-list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/services.html">Service</a></li>
+            <li><a href="/about.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- About -footer -details -->
+    <div class="footer-details-single-col">
+        <h3 class="footer-contact-us-head">
+            About
+        </h3>
+        <ul class="footer-sitemap-list">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </div>
+ </div>
+    </section>
+</footer>
+<script src="./js/email.js"></script>
+<!-- <script src="./js/script.js"></script> -->
+</body>
+</html>
